@@ -1,0 +1,290 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.left-panel {
+  background: linear-gradient(to bottom right, #460773, #287b71);
+  color: white;
+  padding:20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom:0px;
+}
+
+.left-panel h1 {
+  font-size:36px;
+  font-weight: bold;
+}
+
+.right-panel {
+  padding:50px;
+}
+
+.right-panel label {
+  display: block;
+  margin:0px 0 0px;
+}
+
+.right-panel input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5e0ca5;
+}
+
+
+.form-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: purple; 
+  border-radius: 10px;
+  color: white; 
+}
+
+.form-section label {
+  display: block;
+  margin: 10px 0 5px;
+  color: white; 
+  font-weight: bold; 
+}
+
+.form-section input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none; 
+  background-color: white;
+  color: black; 
+  margin-bottom: 10px;
+}
+
+
+.table-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgb(129, 45, 129); 
+  border-radius: 10px;
+  color: rgb(85, 55, 55);
+}
+
+.table-section h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #501d74;
+}
+
+table {
+  background-color: aqua;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table thead {
+  background-color: #7538a0;
+  color: purple;
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #852121;
+  text-align: left;
+}
+
+table tbody tr:hover {
+  background-color: #d3c3c3;
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+
+#galleryTab {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#galleryTab img {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+#galleryTab img:hover {
+  transform: scale(1.05);
+}
+
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(47, 16, 16, 0.2);
+}
+
+
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff;
+  color: #721e1e;
+}
+
+
+.sidebar {
+  background-color: #6a0dad; 
+  color: white;
+}
+
+.sidebar button,
+.sidebar .active {
+  background-color: #7b1fa2;
+  color: white;
+  border: none;
+}
+
+.sidebar button:hover {
+  background-color: #8e24aa;
+}
+
+
+.tabs button {
+  background-color: #e0f7fa; 
+  color: #333;
+  border: 1px solid #6a0dad;
+}
+
+.tabs .active {
+  background-color: #6a0dad;
+  color: white;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #e0ffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th {
+  background-color: #6a0dad;
+  color: white;
+}
+
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.book-now-btn {
+  background-color: #00bcd4; 
+  color: rgb(1, 1, 24);
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.book-now-btn:hover {
+  background-color: #42a1ac;
+}
+
+
+
+#bookingFormContainer {
+  position:center;
+  color: #2a0a41;
+  top: 0; left: 0;
+  width:50px;; height:50px;
+ background: #2a0a41;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: index 9999;;
+}
+
+
+#bookingForm {
+  margin: 0;
+  color: #501d74;
+  text-align:left;
+  text-overflow: ellipsis;
+  padding: 40px;
+  border-radius: 10px;
+  width: 100px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+#calendarTab div {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 0.5rem;
+}
+
